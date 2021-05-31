@@ -4,6 +4,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
+tap 'aws/tap'
 
 # Binaries: brew install <package>
 brew 'awscli'
@@ -55,6 +56,7 @@ cask 'github'
 cask 'google-chrome'
 cask 'imageoptim'
 cask 'insomnia'
+brew 'java'
 cask 'phpmon'
 cask 'ray'
 cask 'signal'
@@ -86,7 +88,3 @@ mas 'CleanMyMac X', id: 1339170533
 mas 'Jira Cloud by Atlassian', id: 1475897096
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
-mas 'Speedtest', id: 1153157709
-mas 'Tweetbot', id: 1384080005
-
-
