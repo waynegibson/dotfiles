@@ -23,6 +23,7 @@ brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config'
+brew 'ruby'
 brew 'svn'
 brew 'zlib' # Needed for Memcached
 
@@ -75,7 +76,6 @@ cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
 cask 'zoom'
-
 
 # Fonts
 cask 'font-lato'
