@@ -9,6 +9,7 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
+alias aws:config="cd .aws"
 alias library="cd $HOME/Library"
 alias projects="cd $HOME/Projects"
 alias sites="cd $HOME/Sites"
