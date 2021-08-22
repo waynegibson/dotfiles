@@ -37,6 +37,9 @@ alias docker-composer="docker-compose"
 # SQL Server
 alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
 
+# Projen: https://github.com/projen/projen
+alias pj="npx projen"
+
 # Git
 alias gs="git status"
 alias gb="git branch"
