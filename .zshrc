@@ -110,23 +110,3 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"###-begin-projen-completions-###
 
-
-###-begin-projen-completions-###
-#
-# yargs command completion script
-#
-# Installation: /usr/local/bin/projen completion >> ~/.zshrc
-#    or /usr/local/bin/projen completion >> ~/.zsh_profile on OSX.
-#
-_projen_yargs_completions()
-{
-  local reply
-  local si=$IFS
-  IFS=$'
-' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /usr/local/bin/projen --get-yargs-completions "${words[@]}"))
-  IFS=$si
-  _describe 'values' reply
-}
-compdef _projen_yargs_completions projen
-###-end-projen-completions-###
-
