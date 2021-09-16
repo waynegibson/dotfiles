@@ -4,7 +4,6 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
-tap 'aws/tap'
 
 # Binaries: brew install <package>
 brew 'awscli'
@@ -15,7 +14,6 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
 brew 'git'
-brew 'git-flow'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
@@ -23,7 +21,6 @@ brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config'
-brew 'ruby'
 brew 'svn'
 brew 'zlib' # Needed for Memcached
 
@@ -57,8 +54,9 @@ cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 cask 'imageoptim'
-brew 'java'
+cask 'insomnia'
 cask 'phpmon'
+cask 'ray'
 cask 'signal'
 cask 'sizzy'
 cask 'slack'
@@ -66,7 +64,10 @@ cask 'sourcetree'
 cask 'tableplus'
 cask 'telegram-desktop'
 cask 'the-unarchiver'
+cask 'tinkerwell'
+cask 'transmission'
 cask 'transmit'
+cask 'tunnelbear'
 cask 'tuple'
 cask 'visual-studio-code'
 cask 'zoom'
@@ -85,3 +86,5 @@ mas 'CleanMyMac X', id: 1339170533
 mas 'Jira Cloud by Atlassian', id: 1475897096
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
+mas 'Speedtest', id: 1153157709
+mas 'Tweetbot', id: 1384080005

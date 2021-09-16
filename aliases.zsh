@@ -9,7 +9,6 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias aws:config="cd .aws"
 alias library="cd $HOME/Library"
 alias projects="cd $HOME/Projects"
 alias sites="cd $HOME/Sites"
@@ -36,9 +35,6 @@ alias docker-composer="docker-compose"
 
 # SQL Server
 alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
-
-# Projen: https://github.com/projen/projen
-alias pj="npx projen"
 
 # Git
 alias gs="git status"
