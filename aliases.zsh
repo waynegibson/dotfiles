@@ -57,3 +57,12 @@ alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+# Node versions
+alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
+alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
+
+# Setting node default version
+# If you want to make an older version of Node.js the default, do the following:
+# brew unlink node
+# brew link --overwrite node@16
