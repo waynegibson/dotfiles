@@ -25,6 +25,7 @@ brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'ruby'
 brew 'svn'
+brew 'iterm2'
 brew 'zlib' # Needed for Memcached
 
 # Development: brew install <package>
