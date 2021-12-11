@@ -59,7 +59,6 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # Node versions
-alias node17='export PATH="/usr/local/opt/node/bin:$PATH"; node -v'
 alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
 alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
 
