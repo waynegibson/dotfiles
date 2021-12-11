@@ -16,6 +16,9 @@ echo "Installing the brew file dependencies..."
 brew tap homebrew/bundle
 brew bundle
 
+echo "Upgrading brew casks and formulae..."
+brew upgrade
+
 echo "Cleaning up brew deprecated formulae..."
 brew cleanup
 
