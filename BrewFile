@@ -26,13 +26,12 @@ brew 'mas' # Mac App Store manager
 brew 'pkg-config'
 brew 'ruby'
 brew 'svn'
-brew 'iterm2'
 brew 'zlib' # Needed for Memcached
 
 # Development: brew install <package>
 brew 'php'
-brew 'php@7.4'
-# brew 'php@7.3'
+# brew 'php@7.4'  # disabled
+# brew 'php@7.3' # deprecated
 brew 'composer'
 brew 'imagemagick'
 brew 'libmemcached'
@@ -51,15 +50,18 @@ cask 'aerial'
 cask 'alfred'
 cask 'amazon-chime'
 cask 'anydesk'
-# cask 'caffeine'
+# cask 'caffeine
+cask 'cleanmymac'
 # cask 'dbngin'
 cask 'discord'
 cask 'docker'
+cask 'iterm2'
 cask 'figma'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 # cask 'imageoptim'
+# cask 'insomnia'
 cask 'opera'
 # cask 'phpmon'
 # cask 'signal'
@@ -86,7 +88,6 @@ cask 'zoom'
 # cask 'font-source-serif-pro'
 
 # App Store: mas install <id>
-mas 'CleanMyMac X', id: 1339170533
 mas 'Jira Cloud by Atlassian', id: 1475897096
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825
