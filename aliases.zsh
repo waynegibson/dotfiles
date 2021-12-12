@@ -15,6 +15,7 @@ alias projects="cd $HOME/Projects"
 alias sites="cd $HOME/Sites"
 alias lara="sites && cd laravel/"
 alias lara:docs="lara && cd docs/"
+alias clients="cd /Volumes/macOS\ Data/Projects/clients"
 
 # Laravel
 alias a="php artisan"
