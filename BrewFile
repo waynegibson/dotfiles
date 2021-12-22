@@ -49,6 +49,8 @@ cask '1password-cli'
 cask 'aerial'
 cask 'alfred'
 cask 'amazon-chime'
+cask 'amazon-workdocs-drive'
+cask 'amazon-workspaces'
 cask 'anydesk'
 # cask 'caffeine
 cask 'cleanmymac'
