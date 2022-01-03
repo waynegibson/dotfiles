@@ -3,19 +3,20 @@ alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
 alias c="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias reload:shell="source $HOME/.zshrc"
-alias reload:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias fresh:shell="source $HOME/.zshrc"
+alias fresh:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias aws:config="cd .aws"
 alias library="cd $HOME/Library"
-alias projects="cd $HOME/Projects"
+# alias projects="cd $HOME/Projects"
+alias clients="cd /Volumes/macOS\ Data/Projects/clients"
+alias projects="cd /Volumes/macOS\ Data/Projects"
 alias sites="cd $HOME/Sites"
 alias lara="sites && cd laravel/"
 alias lara:docs="lara && cd docs/"
-alias clients="cd /Volumes/macOS\ Data/Projects/clients"
 
 # Laravel
 alias a="php artisan"
@@ -60,10 +61,9 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # Node versions
-alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
-alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
-
 # Setting node default version
 # If you want to make an older version of Node.js the default, do the following:
 # brew unlink node
 # brew link --overwrite node@16
+# alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
+# alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
