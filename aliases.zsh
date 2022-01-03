@@ -1,20 +1,23 @@
+# Custom folders and paths on MacOs
+export PROJECTS_PATH="/Volumes/macOS\ Data/Projects"
+
 # Shortcuts
 alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
 alias c="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias fresh:shell="source $HOME/.zshrc"
-alias fresh:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias refresh:shell="source $HOME/.zshrc"
+alias refresh:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
-alias dotfiles="cd $DOTFILES"
-alias aws:config="cd .aws"
-alias library="cd $HOME/Library"
-# alias projects="cd $HOME/Projects"
-alias clients="cd /Volumes/macOS\ Data/Projects/clients"
-alias projects="cd /Volumes/macOS\ Data/Projects"
-alias sites="cd $HOME/Sites"
+alias dotfiles="$DOTFILES"
+alias aws:auth="$HOME/.aws"
+alias lib="$HOME/Library"
+alias proj="$PROJECTS_PATH"
+alias prod="$PROJECTS_PATH/production"
+alias play="$PROJECTS_PATH/playground"
+alias sites="$HOME/Sites"
 alias lara="sites && cd laravel/"
 alias lara:docs="lara && cd docs/"
 
