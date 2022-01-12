@@ -6,9 +6,13 @@ alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
 alias c="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias refresh:shell="source $HOME/.zshrc"
-alias refresh:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias fresh:zsh="source $HOME/.zshrc"
+alias fresh:dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+
+# Filesystem
+alias o="open ."
+alias c="code ."
 
 # Directories
 alias dotfiles="$DOTFILES"

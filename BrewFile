@@ -27,6 +27,7 @@ brew 'pkg-config'
 brew 'ruby'
 brew 'svn'
 brew 'zlib' # Needed for Memcached
+brew 'zsh-syntax-highlighting'
 
 # Development: brew install <package>
 brew 'php'
@@ -67,6 +68,7 @@ cask 'google-chrome'
 cask 'microsoft-teams'
 cask 'opera'
 # cask 'phpmon'
+cask 'rightfont'
 # cask 'signal'
 cask 'sizzy'
 cask 'slack'
@@ -82,6 +84,7 @@ cask 'visual-studio-code'
 cask 'zoom'
 
 # Fonts
+cask 'font-fira-code'
 # cask 'font-lato'
 # cask 'font-open-sans'
 # cask 'font-roboto'

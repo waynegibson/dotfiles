@@ -110,3 +110,5 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"###-begin-projen-completions-###
 
+# Syntax highlighting (must be the last source in the file)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
