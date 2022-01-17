@@ -6,11 +6,12 @@ tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'aws/tap'
 
-# Binaries: brew install <package>
+# Binaries & Libraries: brew install <package>
 brew 'awscli'
 brew 'aws-cdk'
 brew 'aws-sam-cli'
 brew 'bash' # Latest Bash version
+brew 'cli53' # Route53 cli tool to export and manage zone records
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
@@ -94,6 +95,6 @@ cask 'font-fira-code'
 # cask 'font-source-serif-pro'
 
 # App Store: mas install <id>
-mas 'Jira Cloud by Atlassian', id: 1475897096
+# mas 'Jira Cloud by Atlassian', id: 1475897096
 mas 'Pages', id: 409201541
 mas 'Numbers', id: 409203825

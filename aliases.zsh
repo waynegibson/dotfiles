@@ -3,7 +3,7 @@ export PROJECTS_PATH="/Volumes/macOS\ Data/Projects"
 
 # Shortcuts
 alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
-alias c="clear"
+alias cl="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias fresh:zsh="source $HOME/.zshrc"
