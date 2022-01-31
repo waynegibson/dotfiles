@@ -1,5 +1,5 @@
 # Custom folders and paths on MacOs
-export PROJECTS_PATH="/Volumes/macOS\ Data/Projects"
+export PROJECTS_PATH="~/projects"
 
 # Shortcuts
 alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
