@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
@@ -8,7 +10,7 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
 # Enable completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit; _comp_options+=(globdots);
 
 # Minimal - Theme Settings
 export MNML_INSERT_CHAR="$"
@@ -79,7 +81,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git macos zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,6 +111,3 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"###-begin-projen-completions-###
-
-# Syntax highlighting (must be the last source in the file)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

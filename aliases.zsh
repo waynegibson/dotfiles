@@ -1,34 +1,41 @@
 # Custom folders and paths on MacOs
 export PROJECTS_PATH="/Volumes/macOS\ Data/Projects"
 
-# Shortcuts
+# Misc
+alias zshconfig="vim ~/.zshrc"
+alias zshreload="source ~/.zshrc"
 alias brew:upgrade="brew update && brew upgrade --greedy && brew cleanup"
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias zfresh="source $HOME/.zshrc"
+alias publickey="pbcopy < ~/.ssh/id_rsa.pub"
+alias hostfile="sudo vim /etc/hosts"
+alias server="php -S localhost:8888"
 alias dfresh="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Filesystem
 alias o="open ."
 alias c="clear"
+alias la="ls -la"
+alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias vs="code ."
 
 # Directories
 alias dotfiles="$DOTFILES"
 alias aws:auth="$HOME/.aws"
 alias lib="$HOME/Library"
-alias proj="$PROJECTS_PATH"
-alias prod="$PROJECTS_PATH/production"
-alias play="$PROJECTS_PATH/playground"
+alias pp="$PROJECTS_PATH"
+alias pp:prod="$PROJECTS_PATH/production"
+alias pp:play="$PROJECTS_PATH/playground"
 alias sites="$HOME/Sites"
 alias lara="sites && cd laravel/"
 alias lara:docs="lara && cd docs/"
 
 # Laravel
 alias art="php artisan"
-alias seed="php artisan db:seed"
-alias sfresh="php artisan migrate:fresh --seed"
+alias tinker="php artisan tinker"
+alias mfs="php artisan migrate:fresh --seed"
+alias phpunit="vendor/bin/phpunit"
+alias testp="php artisan test --parallel"
+alias pest="vendor/bin/pest"
+alias vapor="vendor/bin/vapor"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -50,18 +57,18 @@ alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:
 alias pj="npx projen"
 
 # Git
+alias gc="git commit -m"
+alias ga="git add -A"
 alias gs="git status"
 alias gb="git branch"
-alias gc="git checkout"
-alias gl="git log --oneline --decorate --color"
+alias gco="git checkout"
+alias gp="git push origin"
+alias undocommit="git reset HEAD~1"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"
-alias commit="git add . && git commit -m"
-alias diff="git diff"
 alias force="git push --force"
-alias nuke="git clean -df && git reset --hard"
+alias nuke="git reset --hard && git clean -df"
 alias pop="git stash pop"
-alias pull="git pull"
-alias push="git push"
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
