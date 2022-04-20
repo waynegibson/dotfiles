@@ -11,8 +11,8 @@ alias server="php -S localhost:8888"
 alias dfresh="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 
 # Filesystem
-alias o="open ."
-alias c="clear"
+alias op="open ."
+alias cl="clear"
 alias la="ls -la"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 alias vs="code ."
@@ -56,13 +56,17 @@ alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:
 # Projen: https://github.com/projen/projen
 alias pj="npx projen"
 
+# wine64
+alias mik="wine64 '/Applications/winbox64.exe'"
+
 # Git
 alias gc="git commit -m"
-alias ga="git add -A"
+alias ga="git add -A "
 alias gs="git status"
 alias gb="git branch"
 alias gco="git checkout"
 alias gp="git push origin"
+alias commit="git add . && git commit -m"
 alias undocommit="git reset HEAD~1"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"

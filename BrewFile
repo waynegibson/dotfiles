@@ -53,7 +53,7 @@ cask 'alfred'
 cask 'amazon-chime'
 cask 'amazon-workdocs-drive'
 cask 'amazon-workspaces'
-cask 'anydesk'
+# cask 'anydesk'
 # cask 'caffeine
 cask 'cleanmymac'
 # cask 'dbngin'
@@ -81,6 +81,7 @@ cask 'telegram-desktop'
 # cask 'transmission'
 # cask 'transmit'
 # cask 'tuple'
+cask '--no-quarantine wine-stable' # https://github.com/Gcenx/macOS_Wine_builds (used for mikrotik winbox.exe)
 cask 'visual-studio-code'
 cask 'zoom'
 

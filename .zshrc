@@ -111,3 +111,8 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"###-begin-projen-completions-###
+
+# used for wine install to run winbox.exe
+export PATH="/Applications/Wine Staging.app/Contents/Resources/wine/bin:$PATH"
+export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
+export DYLD_FALLBACK_LIBRARY_PATH="/usr/lib:/opt/X11/lib:$DYLD_FALLBACK_LIBRARY_PATH"
