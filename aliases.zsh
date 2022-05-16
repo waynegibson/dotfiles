@@ -80,8 +80,9 @@ alias wip="commit wip"
 
 # Node versions
 alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
-alias node16='export PATH="/usr/local/bin:/usr/local/opt/node@16/bin:$PATH"; node -v'
+alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
+alias node18='export PATH="/usr/local/bin:/usr/local/opt/node@18/bin:$PATH"; node -v'
 
-# If you want to make an older version of Node.js the default e.g. nodelink node16:
+# If you want to make an older version of Node.js the default e.g. nodelink node@16:
 alias nodelink="brew unlink node && brew link --overwrite"
 
