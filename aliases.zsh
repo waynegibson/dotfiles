@@ -79,9 +79,10 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # Node versions
-# Setting node default version
-# If you want to make an older version of Node.js the default, do the following:
-# brew unlink node
-# brew link --overwrite node@16
-alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
 alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
+alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
+alias node17='export PATH="/usr/local/opt/node@17/bin:$PATH"; node -v'
+
+# If you want to make an older version of Node.js the default e.g. nodelink node16:
+alias nodelink="brew unlink node && brew link --overwrite node17"
+
