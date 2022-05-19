@@ -44,6 +44,7 @@ alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php -
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 
 # JS
+alias yfresh="rm -rf node_modules/ yarn-lock.json && yarn install"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 
@@ -62,6 +63,7 @@ alias mik="wine64 '/Applications/winbox64.exe'"
 # Git
 alias gc="git commit -m"
 alias ga="git add -A "
+alias gm="git merge"
 alias gs="git status"
 alias gb="git branch"
 alias gco="git checkout"
