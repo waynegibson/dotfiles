@@ -44,7 +44,7 @@ alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php -
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 
 # JS
-alias yfresh="rm -rf node_modules/ yarn-lock.json && yarn install"
+alias yfresh="rm -rf node_modules/ yarn.lock && yarn install"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
 
