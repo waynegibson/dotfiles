@@ -1,5 +1,5 @@
 # Custom folders and paths on MacOs
-export PROJECTS_PATH="/Volumes/macOS\ Data/Projects"
+export PROJECTS_PATH="/Volumes/macos-data/Projects/"
 
 # Misc
 alias zshconfig="vim ~/.zshrc"
@@ -21,9 +21,8 @@ alias vs="code ."
 alias dotfiles="$DOTFILES"
 alias aws:auth="$HOME/.aws"
 alias lib="$HOME/Library"
-alias pp="$PROJECTS_PATH"
-alias pp:prod="$PROJECTS_PATH/production"
-alias pp:play="$PROJECTS_PATH/playground"
+alias work="$PROJECTS_PATH"
+alias work:play="$PROJECTS_PATH/playground"
 alias sites="$HOME/Sites"
 alias lara="sites && cd laravel/"
 alias lara:docs="lara && cd docs/"
