@@ -1,9 +1,9 @@
 # Taps
+tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
-tap 'nicoverbruggen/homebrew-cask'
+#tap 'nicoverbruggen/homebrew-cask'
 tap 'aws/tap'
 
 # Binaries & Libraries: brew install <package>
@@ -13,89 +13,90 @@ brew 'aws-sam-cli'
 brew 'bash' # Latest Bash version
 brew 'cli53' # Route53 cli tool to export and manage zone records
 brew 'coreutils' # Those that come with macOS are outdated
-brew 'ffmpeg'
-brew 'gh'
+#brew 'ffmpeg'
+#brew 'gh'
 brew 'git'
-brew 'git-flow'
-brew 'gnupg'
-brew 'grep'
-brew 'httpie'
-brew 'hub'
-brew 'java'
-brew 'mackup'
-brew 'mas' # Mac App Store manager
-brew 'pkg-config'
+#brew 'git-flow'
+#brew 'gnupg'
+#brew 'grep'
+#brew 'httpie'
+#brew 'hub'
+#brew 'java'
+#brew 'mackup'
+#brew 'mas' # Mac App Store manager
+#brew 'pkg-config'
 brew 'ruby'
-brew 'svn'
-brew 'zlib' # Needed for Memcached
-brew 'zsh-syntax-highlighting'
+#brew 'svn'
+#brew 'zlib' # Needed for Memcached
+#brew 'zsh-syntax-highlighting'
 
 # Development: brew install <package>
 brew 'php'
 # brew 'php@7.4'  # disabled
 # brew 'php@7.3' # deprecated
 brew 'composer'
-brew 'imagemagick'
-brew 'libmemcached'
-brew 'meilisearch'
-brew 'memcached'
+#brew 'imagemagick'
+#brew 'libmemcached'
+#brew 'meilisearch'
+#brew 'memcached'
 brew 'mysql'
-brew 'nginx'
+#brew 'nginx'
 brew 'node'
-brew 'redis'
+#brew 'redis'
 brew 'yarn'
 
 # Applications: brew install --cask <package>
-cask '1password'
-cask '1password-cli'
-cask 'aerial'
-# cask 'alfred'
-cask 'amazon-chime'
+#cask '1password'
+#cask '1password-cli'
+#cask 'aerial'
+#cask 'alfred'
+#cask 'amazon-chime'
 cask 'amazon-workdocs-drive'
 cask 'amazon-workspaces'
-# cask 'anydesk'
-# cask 'caffeine
-cask 'cleanmymac'
-# cask 'dbngin'
+#cask 'anydesk'
+#cask 'caffeine
+#cask 'cleanmymac'
+#cask 'dbngin'
 cask 'discord'
 cask 'docker'
 cask 'iterm2'
 cask 'figma'
-cask 'firefox'
+#cask 'firefox'
 cask 'github'
 cask 'google-chrome'
-# cask 'imageoptim'
-# cask 'insomnia'
-cask 'microsoft-teams'
+#cask 'imageoptim'
+#cask 'insomnia'
+#cask 'microsoft-teams'
 cask 'opera'
-# cask 'phpmon'
+#cask 'phpmon'
 cask 'rightfont'
-# cask 'signal'
-cask 'sizzy'
+#cask 'signal'
+#cask 'sizzy'
 cask 'slack'
-cask 'sourcetree'
+#cask 'sourcetree'
 cask 'tableplus'
-# cask 'telegram-desktop'
-# cask 'the-unarchiver'
-# cask 'tinkerwell'
-# cask 'transmission'
-# cask 'transmit'
-# cask 'tuple'
-cask '--no-quarantine wine-stable' # https://github.com/Gcenx/macOS_Wine_builds (used for mikrotik winbox.exe)
+#cask 'telegram-desktop'
+#cask 'the-unarchiver'
+#cask 'tinkerwell'
+#cask 'transmission'
+#cask 'transmit'
+#cask 'tuple'
+#cask '--no-quarantine wine-stable' # https://github.com/Gcenx/macOS_Wine_builds (used for mikrotik winbox.exe)
 cask 'visual-studio-code'
 cask 'zoom'
 
-# Fonts
-cask 'font-fira-code'
-# cask 'font-lato'
-# cask 'font-open-sans'
-# cask 'font-roboto'
-# cask 'font-source-code-pro-for-powerline'
-# cask 'font-source-code-pro'
-# cask 'font-source-sans-pro'
-# cask 'font-source-serif-pro'
+# Fonts: brew install --cask <font>
+cask font-jetbrains-mono
+#cask 'font-fira-code'
+#cask 'font-lato'
+#cask 'font-open-sans'
+#cask 'font-roboto'
+#cask 'font-source-code-pro-for-powerline'
+#cask 'font-source-code-pro'
+#cask 'font-source-sans-pro'
+#cask 'font-source-serif-pro'
 
 # App Store: mas install <id>
-# mas 'Jira Cloud by Atlassian', id: 1475897096
-mas 'Pages', id: 409201541
-mas 'Numbers', id: 409203825
+#mas 'Jira Cloud by Atlassian', id: 1475897096
+#mas 'Pages', id: 409201541
+#mas 'Numbers', id: 409203825

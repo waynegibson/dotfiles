@@ -3,25 +3,27 @@ ZSH_DISABLE_COMPFIX=true
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Enable completions
-autoload -Uz compinit && compinit; _comp_options+=(globdots);
+# autoload -Uz compinit && compinit; _comp_options+=(globdots);
 
-# Minimal - Theme Settings
-export MNML_INSERT_CHAR="$"
-export MNML_PROMPT=(mnml_git mnml_keymap)
-export MNML_RPROMPT=('mnml_cwd 20')
+# Spaceship - Installation
+# git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="minimal"
+# Spaceship - Theme Settings (https://spaceship-prompt.sh/options/)
+SPACESHIP_TIME_SHOW="false" # default - false
+SPACESHIP_USER_SHOW="false" # default - false
+SPACESHIP_DIR_SHOW="true" # default - true
+SPACESHIP_GIT_SHOW="true" # default - true
+SPACESHIP_GIT_BRANCH_SHOW="true" # default - true
+SPACESHIP_GIT_STATUS_SHOW="true" # default - true
+SPACESHIP_AWS_SHOW="true" # default - true
+
+# Set name of the theme to load
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -81,7 +83,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git macos zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,6 +115,6 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"###-begin-projen-completions-###
 
 # used for wine install to run winbox.exe
-export PATH="/Applications/Wine Staging.app/Contents/Resources/wine/bin:$PATH"
-export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
-export DYLD_FALLBACK_LIBRARY_PATH="/usr/lib:/opt/X11/lib:$DYLD_FALLBACK_LIBRARY_PATH"
+# export PATH="/Applications/Wine Staging.app/Contents/Resources/wine/bin:$PATH"
+# export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
+# export DYLD_FALLBACK_LIBRARY_PATH="/usr/lib:/opt/X11/lib:$DYLD_FALLBACK_LIBRARY_PATH"

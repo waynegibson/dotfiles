@@ -1,5 +1,5 @@
-# Custom folders and paths on MacOs
-export PROJECTS_PATH="/Volumes/macos-data/Projects/"
+# Custom folders and paths on MacOs Data Drive
+export PROJECTS_PATH="/Volumes/macOs-data/workspace/"
 
 # Misc
 alias zshconfig="vim ~/.zshrc"
@@ -60,15 +60,22 @@ alias pj="npx projen"
 alias mik="wine64 '/Applications/winbox64.exe'"
 
 # Git
-alias gc="git commit -m"
-alias ga="git add -A "
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gca='git commit -a'
+alias gcam='git add -A && git commit -m'
+alias ga='git add'
+alias gaa='git add -A'
 alias gm="git merge"
 alias gs="git status"
 alias gb="git branch"
+alias gbd='git branch -d'
 alias gco="git checkout"
+alias gcob='git checkout -b'
 alias gp="git push origin"
 alias commit="git add . && git commit -m"
-alias undocommit="git reset HEAD~1"
+alias grh='git reset HEAD'
+alias grh1='git reset HEAD~1'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"
 alias force="git push --force"
@@ -80,9 +87,9 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # Node versions
-alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
-alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
-alias node18='export PATH="/usr/local/bin:/usr/local/opt/node@18/bin:$PATH"; node -v'
+alias node:14='export PATH="/usr/local/opt/node@14/bin:$PATH"; node -v'
+alias node:16='export PATH="/usr/local/opt/node@16/bin:$PATH"; node -v'
+alias node:18='export PATH="/usr/local/bin:/usr/local/opt/node@18/bin:$PATH"; node -v'
 
 # If you want to make an older version of Node.js the default e.g. nodelink node@16:
 alias nodelink="brew unlink node && brew link --overwrite"
