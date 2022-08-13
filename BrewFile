@@ -53,7 +53,7 @@ brew 'yarn'
 # cask '1password-cli'
 # cask 'aerial'
 # cask 'alfred'
-# cask 'amazon-chime'
+cask 'amazon-chime'
 cask 'amazon-workdocs-drive'
 cask 'amazon-workspaces'
 # cask 'anydesk'
@@ -89,7 +89,7 @@ cask 'visual-studio-code'
 cask 'zoom'
 
 # Fonts: brew install --cask <font>
-cask font-jetbrains-mono
+cask 'font-jetbrains-mono'
 # cask 'font-fira-code'
 # cask 'font-lato'
 # cask 'font-open-sans'
